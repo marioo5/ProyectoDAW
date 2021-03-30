@@ -1,5 +1,5 @@
 <?php
-
+/*
 $errorMSG = "";
 
 // NAME
@@ -73,5 +73,5 @@ if ($success && $errorMSG == ""){
         echo $errorMSG;
     }
 }
-
+*/
 ?>
