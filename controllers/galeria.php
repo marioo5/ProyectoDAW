@@ -1,10 +1,10 @@
 <?php
 
-class Enoturismo extends Controller{
+class Galeria extends Controller{
 
     protected function Index(){
 
-        $viewmodel = new EnoturismoModel();
+        $viewmodel = new GalleriaModel();
         $this->returnView($viewmodel->Index(), true);
     
     }

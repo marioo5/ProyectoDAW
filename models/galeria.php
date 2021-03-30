@@ -1,6 +1,6 @@
 <?php 
 
-class ReservaModel extends Model{
+class GalleriaModel extends Model{
 
     public function Index(){
 

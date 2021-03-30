@@ -46,25 +46,27 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbars-rs-food">
 					<ul class="navbar-nav ml-auto">
-						<li class="nav-item active"><a class="nav-link" href="index.php">Home</a></li>
-						<li class="nav-item"><a class="nav-link" href="menu.php">Menu</a></li>
-						<li class="nav-item"><a class="nav-link" href="about.php">About</a></li>
+						<li class="nav-item active"><a class="nav-link" href="<?php echo ROOT_PATH; ?>">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="<?php echo ROOT_PATH; ?>producto">Vinos</a></li>
+						<li class="nav-item"><a class="nav-link" href="<?php echo ROOT_PATH; ?>historia">Historia</a></li>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Pages</a>
+							<a class="nav-link dropdown-toggle" id="dropdown-a" data-toggle="dropdown">Enoturismo</a>
 							<div class="dropdown-menu" aria-labelledby="dropdown-a">
-								<a class="dropdown-item" href="reserva.php">Reservation</a>
-								<a class="dropdown-item" href="stuff.html">Stuff</a>
-								<a class="dropdown-item" href="gallery.html">Gallery</a>
+								<a class="dropdown-item" href="<?php echo ROOT_PATH; ?>reserva">Reservas</a>
+								<a class="dropdown-item" href="<?php echo ROOT_PATH; ?>personal">Personal</a>
+								<a class="dropdown-item" href="<?php echo ROOT_PATH; ?>galeria">Galeria</a>
+								<a class="dropdown-item" href="<?php echo ROOT_PATH; ?>enoturismo">Actividades</a>
 							</div>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Blog</a>
+							<a class="nav-link dropdown-toggle" id="dropdown-a" data-toggle="dropdown">Blog</a>
 							<div class="dropdown-menu" aria-labelledby="dropdown-a">
-								<a class="dropdown-item" href="blog.html">blog</a>
-								<a class="dropdown-item" href="blog-details.html">blog Single</a>
+								<a class="dropdown-item" href="<?php echo ROOT_PATH; ?>noticias">Noticias</a>
+								<a class="dropdown-item" href="<?php echo ROOT_PATH; ?>evento">Eventos</a>
 							</div>
 						</li>
-						<li class="nav-item"><a class="nav-link" href="<?php echo ROOT_PATH; ?>contact">Contact</a></li>
+						<li class="nav-item"><a class="nav-link" href="<?php echo ROOT_PATH; ?>contact">Contacto</a></li>
+						<li class="nav-item active"><a class="nav-link" href="<?php echo ROOT_PATH; ?>users">Login</a></li>
 					</ul>
 				</div>
 			</div>

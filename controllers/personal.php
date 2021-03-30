@@ -1,10 +1,10 @@
 <?php
 
-class Enoturismo extends Controller{
+class Personal extends Controller{
 
     protected function Index(){
 
-        $viewmodel = new EnoturismoModel();
+        $viewmodel = new PersonalModel();
         $this->returnView($viewmodel->Index(), true);
     
     }

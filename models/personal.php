@@ -1,6 +1,6 @@
 <?php 
 
-class ReservaModel extends Model{
+class PersonalModel extends Model{
 
     public function Index(){
 
