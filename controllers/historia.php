@@ -1,10 +1,10 @@
 <?php
 
-class Eventos extends Controller{
+class Historia extends Controller{
 
     protected function Index(){
 
-        $viewmodel = new EventosModel();
+        $viewmodel = new HistoriaModel();
         $this->returnView($viewmodel->Index(), true);
     
     }

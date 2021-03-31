@@ -38,7 +38,7 @@
 <header class="top-navbar">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<div class="container">
-				<a class="navbar-brand" href="index.html">
+				<a class="navbar-brand" href="<?php echo ROOT_PATH; ?>">
 					<img src="../assets/images/logo.png" alt="" />
 				</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-rs-food" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,11 +62,12 @@
 							<a class="nav-link dropdown-toggle" id="dropdown-a" data-toggle="dropdown">Blog</a>
 							<div class="dropdown-menu" aria-labelledby="dropdown-a">
 								<a class="dropdown-item" href="<?php echo ROOT_PATH; ?>noticias">Noticias</a>
-								<a class="dropdown-item" href="<?php echo ROOT_PATH; ?>evento">Eventos</a>
+								<a class="dropdown-item" href="<?php echo ROOT_PATH; ?>eventos">Eventos</a>
 							</div>
 						</li>
 						<li class="nav-item"><a class="nav-link" href="<?php echo ROOT_PATH; ?>contact">Contacto</a></li>
-						<li class="nav-item active"><a class="nav-link" href="<?php echo ROOT_PATH; ?>users">Login</a></li>
+						<li class="nav-item"><a class="nav-link" href="<?php echo ROOT_PATH; ?>users/login">Login</a></li>
+						<li class="nav-item active"><a class="nav-link" href="<?php echo ROOT_PATH; ?>users/register">Registrarse</a></li>
 					</ul>
 				</div>
 			</div>
@@ -91,9 +92,9 @@
 				<div class="col-md-4">
 					<i class="fa fa-volume-control-phone"></i>
 					<div class="overflow-hidden">
-						<h4>Phone</h4>
+						<h4>Teléfono</h4>
 						<p class="lead">
-							+01 123-456-4590
+							941347896
 						</p>
 					</div>
 				</div>
@@ -102,14 +103,14 @@
 					<div class="overflow-hidden">
 						<h4>Email</h4>
 						<p class="lead">
-							yourmail@gmail.com
+							daw005.2021@gmail.com
 						</p>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<i class="fa fa-map-marker"></i>
 					<div class="overflow-hidden">
-						<h4>Location</h4>
+						<h4>Dirección</h4>
 						<p class="lead">
 							800, Lorem Street, US
 						</p>
@@ -137,10 +138,10 @@
 					<p><span class="text-color">Sat-Sun :</span> 5:PM - 10PM</p>
 				</div>
 				<div class="col-lg-3 col-md-6">
-					<h3>Contact information</h3>
+					<h3>Informacion de Contacto</h3>
 					<p class="lead">Ipsum Street, Lorem Tower, MO, Columbia, 508000</p>
 					<p class="lead"><a href="#">+01 2000 800 9999</a></p>
-					<p><a href="#"> info@admin.com</a></p>
+					<p><a href="#"> daw005.2021@gmail.com</a></p>
 				</div>
 				<div class="col-lg-3 col-md-6">
 					<h3>Subscribe</h3>
@@ -152,11 +153,10 @@
 						</form>
 					</div>
 					<ul class="list-inline f-social">
-						<li class="list-inline-item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-						<li class="list-inline-item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-						<li class="list-inline-item"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-						<li class="list-inline-item"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-						<li class="list-inline-item"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.facebook.com/bodegasruizalfaya/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="https://twitter.com/RiojaWine_ES?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.facebook.com/bodegasruizalfaya/videos/1727888157419610/"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.instagram.com/bodegasruizalfaya/?hl=es"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
 					</ul>
 				</div>
 			</div>
@@ -166,8 +166,8 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
-						<p class="company-name">All Rights Reserved. &copy; 2018 <a href="#">Yamifood Restaurant</a> Design By : 
-					<a href="https://html.design/">html design</a></p>
+						<p class="company-name">All Rights Reserved. &copy; 2021 <a href="#">Bodegas Ruiz Alfaya</a> Design By : 
+					<a href="https://github.com/marioo5/ProyectoDAW">Mario Carreras</a></p>
 					</div>
 				</div>
 			</div>

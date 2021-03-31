@@ -1,6 +1,6 @@
 <?php 
 
-class NoticiasModel extends Model{
+class HistoriaModel extends Model{
 
     public function Index(){
 

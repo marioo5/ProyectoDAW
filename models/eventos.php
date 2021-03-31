@@ -1,6 +1,6 @@
 <?php 
 
-class NoticiasModel extends Model{
+class EventosModel extends Model{
 
     public function Index(){
 
