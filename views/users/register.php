@@ -1,23 +1,58 @@
-<div class="card">
-  <div class="card-header">
-    <h3 class="card-title">Register User</h3>
-  </div>
-  <div class="card-body">
-      <form method="post" action="<?php $_SERVER['PHP_SELF'];?>">
-      <div class="form-group">
-        <label>Name</label>
-        <input type="text" name="name" class="form-control" />
-      </div>
-      <div class="form-group">
-        <label>Email</label>
-        <input type="text" name="email" class="form-control" />
-      </div>
-      <div class="form-group">
-        <label>Password</label>
-        <input type="password" name="pass" class="form-control" />
-      </div>
-      <input type="submit" class="btn btn-primary" name="submit" value="Submit" />
-      <a class="btn btn-danger" href="<?php echo ROOT_PATH; ?>home">Cancel</a>
-      </form>
-  </div>
-</div>
+<div class="all-page-title page-breadcrumb">
+		<div class="container text-center">
+			<div class="row">
+				<div class="col-lg-12">
+					<h1>Registrarse</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End All Pages -->
+	
+	<!-- Start Contact -->
+	<div class="contact-box">
+  <form method="post" action="<?php $_SERVER['PHP_SELF'];?>">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="heading-title text-center">
+						<h2>Registro</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<form id="contactForm">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="form-group">
+									<input type="text" class="form-control" id="name" name="name" placeholder="Introduce tu nombre ..." required data-error="<?php echo $errorMSG; ?>">
+									<div class="help-block with-errors"></div>
+								</div>                                 
+							</div>
+              <div class="col-md-12">
+								<div class="form-group">
+									<input type="text" class="form-control" id="name" name="email" placeholder="Introduce tu email ..." required data-error="<?php echo $errorMSG; ?>">
+									<div class="help-block with-errors"></div>
+								</div>                                 
+							</div>
+							<div class="col-md-12">
+								<div class="form-group">
+									<input type="password" placeholder="Introduce tu contraseña ..." id="email" class="form-control" name="pass" required data-error="Please enter your email">
+									<div class="help-block with-errors"></div>
+								</div> 
+							</div>
+								<div class="submit-button text-center">
+									<button class="btn btn-common" id="submit" type="submit" value="Submit">Registrarse</button>
+                  <a class="btn btn-danger" href="<?php echo ROOT_PATH; ?>home">Cancel</a>
+                  <div id="msgSubmit" class="h3 text-center hidden"></div> 
+									<div class="clearfix"></div>
+								</div>
+							</div>
+						</div>            
+					</form>
+				</div>
+			</div>
+		</div>
+    </form>
+	</div>

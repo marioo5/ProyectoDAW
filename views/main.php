@@ -52,7 +52,9 @@
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" id="dropdown-a" data-toggle="dropdown">Enoturismo</a>
 							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+							<?php if(isset($_SESSION['is_logged_in'])) : ?>
 								<a class="dropdown-item" href="<?php echo ROOT_PATH; ?>reserva">Reservas</a>
+							<?php endif; ?>
 								<a class="dropdown-item" href="<?php echo ROOT_PATH; ?>personal">Personal</a>
 								<a class="dropdown-item" href="<?php echo ROOT_PATH; ?>galeria">Galeria</a>
 								<a class="dropdown-item" href="<?php echo ROOT_PATH; ?>enoturismo">Actividades</a>
@@ -61,7 +63,9 @@
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" id="dropdown-a" data-toggle="dropdown">Blog</a>
 							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+							<?php if(isset($_SESSION['is_logged_in'])) : ?>
 								<a class="dropdown-item" href="<?php echo ROOT_PATH; ?>noticias">Noticias</a>
+								<?php endif; ?>
 								<a class="dropdown-item" href="<?php echo ROOT_PATH; ?>eventos">Eventos</a>
 							</div>
 						</li>
@@ -127,28 +131,26 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-3 col-md-6">
-					<h3>About Us</h3>
+					<h3>Sobre Nosotros</h3>
 					<p>Integer cursus scelerisque ipsum id efficitur. Donec a dui fringilla, gravida lorem ac, semper magna. Aenean rhoncus ac lectus a interdum. Vivamus semper posuere dui, at ornare turpis ultrices sit amet. Nulla cursus lorem ut nisi porta, ac eleifend arcu ultrices.</p>
 				</div>
 				<div class="col-lg-3 col-md-6">
-					<h3>Opening hours</h3>
-					<p><span class="text-color">Monday: </span>Closed</p>
-					<p><span class="text-color">Tue-Wed :</span> 9:Am - 10PM</p>
-					<p><span class="text-color">Thu-Fri :</span> 9:Am - 10PM</p>
-					<p><span class="text-color">Sat-Sun :</span> 5:PM - 10PM</p>
+					<h3>Horario</h3>
+					<p><span class="text-color">Lunes: </span>Cerrado</p>
+					<p><span class="text-color">Martes - Jueves :</span> 10:00 - 18:30</p>
+					<p><span class="text-color">Viernes - Sabado :</span> 10:00 - 19:00</p>
+					<p><span class="text-color">Domingo :</span> 9:00 - 14:00</p>
 				</div>
 				<div class="col-lg-3 col-md-6">
 					<h3>Informacion de Contacto</h3>
 					<p class="lead">Ipsum Street, Lorem Tower, MO, Columbia, 508000</p>
-					<p class="lead"><a href="#">+01 2000 800 9999</a></p>
-					<p><a href="#"> daw005.2021@gmail.com</a></p>
+					<p><a href="<?php echo ROOT_PATH; ?>contact"> daw005.2021@gmail.com</a></p>
 				</div>
 				<div class="col-lg-3 col-md-6">
 					<h3>Subscribe</h3>
 					<div class="subscribe_form">
 						<form class="subscribe_form">
-							<input name="EMAIL" id="subs-email" class="form_input" placeholder="Email Address..." type="email">
-							<button type="submit" class="submit">SUBSCRIBE</button>
+							<button type="submit" class="submit" href="<?php echo ROOT_PATH; ?>users/register">SUBSCRIBIRSE</button>
 							<div class="clearfix"></div>
 						</form>
 					</div>

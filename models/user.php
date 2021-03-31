@@ -18,10 +18,11 @@ class UserModel extends Model{
                     return;
                 }
         
-                $this->query('insert into users (name,email,password) values (:name,:email,:pass)');
+                $this->query('insert into users (name,email,password,rol) values (:name,:email,:pass,:rol)');
                 $this->bind(':name', $post['name']);
                 $this->bind(':email', $post['email']);
                 $this->bind(':pass', $password);
+                $this->bind(':rol', 2);
                 $this->execute();
 
             if($this->lastInsertId()){
