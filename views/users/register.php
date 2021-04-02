@@ -32,20 +32,20 @@
 							</div>
               <div class="col-md-12">
 								<div class="form-group">
-									<input type="text" class="form-control" id="name" name="email" placeholder="Introduce tu email ..." required data-error="<?php echo $errorMSG; ?>">
+									<input type="text" class="form-control" id="email" name="email" placeholder="Introduce tu email ..." required data-error="<?php echo $errorMSG; ?>">
 									<div class="help-block with-errors"></div>
 								</div>                                 
 							</div>
 							<div class="col-md-12">
 								<div class="form-group">
-									<input type="password" placeholder="Introduce tu contraseña ..." id="email" class="form-control" name="pass" required data-error="Please enter your email">
+									<input type="password" placeholder="Introduce tu contraseña ..." id="pass" class="form-control" name="pass" required data-error="Please enter your email">
 									<div class="help-block with-errors"></div>
 								</div> 
 							</div>
 								<div class="submit-button text-center">
 									<button class="btn btn-common" id="submit" type="submit" value="Submit">Registrarse</button>
-                  <a class="btn btn-danger" href="<?php echo ROOT_PATH; ?>home">Cancel</a>
-                  <div id="msgSubmit" class="h3 text-center hidden"></div> 
+                  					<a class="btn btn-danger" href="<?php echo ROOT_PATH; ?>home">Cancel</a>
+                  					<div id="msgSubmit" class="h3 text-center hidden"></div> 
 									<div class="clearfix"></div>
 								</div>
 							</div>

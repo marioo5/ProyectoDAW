@@ -3,7 +3,7 @@
 		<div class="container text-center">
 			<div class="row">
 				<div class="col-lg-12">
-					<h1>Contact</h1>
+					<h1>Contacto</h1>
 				</div>
 			</div>
 		</div>
@@ -16,36 +16,34 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="heading-title text-center">
-						<h2>Contact</h2>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+						<h2>Contacto</h2>
+						<p>Contacta sin problema con nosotros</p>
 					</div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-lg-12">
-					<form id="contactForm">
+					<form id="contactForm" action="<?php $_SERVER['PHP_SELF'];?>">
 						<div class="row">
 							<div class="col-md-12">
 								<div class="form-group">
-									<input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required data-error="<?php echo $errorMSG; ?>">
+									<input type="text" class="form-control" id="name" name="name" placeholder="Tu Nombre" required data-error="<?php echo $errorMSG; ?>">
 									<div class="help-block with-errors"></div>
 								</div>                                 
 							</div>
 							<div class="col-md-12">
 								<div class="form-group">
-									<input type="text" placeholder="Your Email" id="email" class="form-control" name="name" required data-error="Please enter your email">
+									<input type="text" placeholder="Tu Email" id="email" class="form-control" name="email" required data-error="<?php echo $errorMSG; ?>">
 									<div class="help-block with-errors"></div>
 								</div> 
 							</div>
 							<div class="col-md-12">
 								<div class="form-group"> 
-									<textarea class="form-control" id="message" placeholder="Your Message" rows="4" data-error="Write your message" required></textarea>
+									<textarea class="form-control" id="message" placeholder="Tu Mensaje" rows="4" data-error="<?php echo $errorMSG; ?>" required></textarea>
 									<div class="help-block with-errors"></div>
 								</div>
 								<div class="submit-button text-center">
-									<button class="btn btn-common" id="submit" type="submit">Send Message</button>
-									<div id="msgSubmit" class="h3 text-center hidden"></div> 
-									<div class="clearfix"></div> 
+									<button class="btn btn-common" id="submit" type="submit" value="Submit">Enviar Mensaje</button>
 								</div>
 							</div>
 						</div>            

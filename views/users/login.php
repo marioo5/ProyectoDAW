@@ -26,13 +26,13 @@
 						<div class="row">
 							<div class="col-md-12">
 								<div class="form-group">
-									<input type="text" class="form-control" id="name" name="email" placeholder="Introduce tu email ..." required data-error="<?php echo $errorMSG; ?>">
+									<input type="text" class="form-control" id="email" name="email" placeholder="Introduce tu email ..." required data-error="<?php echo $errorMSG; ?>">
 									<div class="help-block with-errors"></div>
 								</div>                                 
 							</div>
 							<div class="col-md-12">
 								<div class="form-group">
-									<input type="password" placeholder="Introduce tu contraseña ..." id="email" class="form-control" name="pass" required data-error="Please enter your email">
+									<input type="password" placeholder="Introduce tu contraseña ..." id="pass" class="form-control" name="pass" required data-error="Please enter your email">
 									<div class="help-block with-errors"></div>
 								</div> 
 							</div>

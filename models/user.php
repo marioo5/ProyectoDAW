@@ -18,11 +18,11 @@ class UserModel extends Model{
                     return;
                 }
         
-                $this->query('insert into users (name,email,password,rol) values (:name,:email,:pass,:rol)');
+                $this->query('insert into usuarios (name,email,password,rol) values (:name,:email,:pass,:rol)');
                 $this->bind(':name', $post['name']);
                 $this->bind(':email', $post['email']);
                 $this->bind(':pass', $password);
-                $this->bind(':rol', 2);
+                $this->bind(':rol', "usuario");
                 $this->execute();
 
             if($this->lastInsertId()){
@@ -48,21 +48,23 @@ class UserModel extends Model{
 
             if($post['submit']){
         
-                $this->query('select * from users where email = :email and password = :pass');
+                $this->query('select * from usuarios where email = :email and password = :pass and rol = :rol');
                 $this->bind(':email', $post['email']);
                 $this->bind(':pass', $password);
+                $this->bind(':rol', $this->query('select rol from users where email = :email'));
                 
                 $row = $this->single();
 
                 if($row){
                     $_SESSION['is_logged_in'] = true;
                     $_SESSION['user_data'] = array(
-                        "id" => $row['id'],
+                        "id" => $row['idusuario'],
                         "name" => $row['name'],
-                        "email" => $row['email']
+                        "email" => $row['email'],
+                        "rol" => $row['rol']
 
                     );
-                    header('Location: '.ROOT_URL.'shares');
+                    header('Location: '.ROOT_URL.'noticias');
                 }else {
                     Messages::setMsg('Incorrect Login', 'error');
                 }
