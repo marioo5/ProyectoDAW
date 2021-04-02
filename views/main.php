@@ -47,7 +47,7 @@
 				<div class="collapse navbar-collapse" id="navbars-rs-food">
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item active"><a class="nav-link" href="<?php echo ROOT_PATH; ?>">Home</a></li>
-						<li class="nav-item"><a class="nav-link" href="<?php echo ROOT_PATH; ?>producto">Vinos</a></li>
+						<li class="nav-item"><a class="nav-link" href="<?php echo ROOT_PATH; ?>producto">Productos</a></li>
 						<li class="nav-item"><a class="nav-link" href="<?php echo ROOT_PATH; ?>historia">Historia</a></li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" id="dropdown-a" data-toggle="dropdown">Enoturismo</a>
@@ -56,7 +56,7 @@
 								<a class="dropdown-item" href="<?php echo ROOT_PATH; ?>reserva">Reservas</a>
 							<?php endif; ?>
 								<a class="dropdown-item" href="<?php echo ROOT_PATH; ?>personal">Personal</a>
-								<a class="dropdown-item" href="<?php echo ROOT_PATH; ?>galeria">Galeria</a>
+								<a class="dropdown-item" href="<?php echo ROOT_PATH; ?>galeria">Galería</a>
 								<a class="dropdown-item" href="<?php echo ROOT_PATH; ?>enoturismo">Actividades</a>
 							</div>
 						</li>

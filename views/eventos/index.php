@@ -4,7 +4,7 @@
 		<div class="container text-center">
 			<div class="row">
 				<div class="col-lg-12">
-					<h1>Blog</h1>
+					<h1>Eventos</h1>
 				</div>
 			</div>
 		</div>
@@ -17,8 +17,8 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="heading-title text-center">
-						<h2>Blog</h2>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+						<h2>Eventos</h2>
+						<p>Diferentes eventos del mundo del vino</p>
 					</div>
 				</div>
 			</div>
