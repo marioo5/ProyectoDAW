@@ -9,6 +9,20 @@ class Noticias extends Controller{
     
     }
 
+    protected function add(){
+
+        if(!isset($_SESSION['is_logged_in'])){
+
+            header('Location: '.ROOT_URL.'noticias');
+
+        }
+
+        $viewmodel = new NoticiasModel();
+        $this->returnView($viewmodel->add(), true);
+    
+
+    }
+
 
 }
 

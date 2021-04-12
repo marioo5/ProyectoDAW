@@ -61,7 +61,6 @@ class UserModel extends Model{
                 $this->query('select rol from usuarios where email = :email');
                 $this->bind(':email', $post['email']);
                 $rol=$this->resultSet();
-                print_r($rol);
                 $this->query('select * from usuarios where email = :email and password = :pass and rol = :rol');
                 $this->bind(':email', $post['email']);
                 $this->bind(':pass', $password);

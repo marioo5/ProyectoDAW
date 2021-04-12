@@ -32,14 +32,23 @@
 							</div>
               <div class="col-md-12">
 								<div class="form-group">
-									<input type="text" class="form-control" id="descripcion" name="descripcion" placeholder="Introduce tu email ..." required data-error="<?php echo $errorMSG; ?>">
+									<textarea class="form-control" id="textarea_com" name="descripcion" placeholder="Introduce una descripcion ..." required data-error="<?php echo $errorMSG; ?>" rows="4"></textarea>
 									<div class="help-block with-errors"></div>
 								</div>                                 
 							</div>
+
+							<form enctype="multipart/form-data" action="upload.php" method="POST">
+							<div class="col-md-12">
+								<div class="form-group">
+									<input class="form-control" id="foto" name="foto" type="file" />
+									<div class="help-block with-errors"></div>
+								</div>
+							</div>
+							</form>
 							
 								<div class="submit-button text-center">
-									<button class="btn btn-common" id="submit" type="submit" value="Submit">Registrarse</button>
-                  					<a class="btn btn-danger" href="<?php echo ROOT_PATH; ?>home">Cancel</a>
+									<button class="btn btn-common" id="submit" type="submit" value="Submit">Insertar Noticia</button>
+                  					<a class="btn btn-danger" href="<?php echo ROOT_PATH; ?>noticias">Cancel</a>
                   					<div id="msgSubmit" class="h3 text-center hidden"></div> 
 									<div class="clearfix"></div>
 								</div>
