@@ -184,6 +184,9 @@
 						</div>
 					</div>
 				</div>
+				<?php if(isset($_SESSION['is_logged_in']) && $_SESSION['user_data']['rol']=='usuario') : ?>
+				<button class="btn btn-common" id="submit" type="submit" value="submit">Añadir Noticia</button>
+				<?php endif; ?>
 			</div>
 		</div>
 	</div>

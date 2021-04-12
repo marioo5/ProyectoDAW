@@ -70,8 +70,12 @@
 							</div>
 						</li>
 						<li class="nav-item"><a class="nav-link" href="<?php echo ROOT_PATH; ?>contact">Contacto</a></li>
+						<?php if(isset($_SESSION['is_logged_in'])) : ?>
+						<li class="nav-item"><a class="nav-link" href="<?php echo ROOT_PATH; ?>users/logout">Deslogearse</a></li>
+						<?php else : ?>
 						<li class="nav-item"><a class="nav-link" href="<?php echo ROOT_PATH; ?>users/login">Login</a></li>
 						<li class="nav-item active"><a class="nav-link" href="<?php echo ROOT_PATH; ?>users/register">Registrarse</a></li>
+						<?php endif; ?>
 					</ul>
 				</div>
 			</div>

@@ -37,7 +37,8 @@
 								</div> 
 							</div>
 								<div class="submit-button text-center">
-									<button class="btn btn-common" id="submit" type="submit" value="Submit">Login</button>
+								<input type="hidden" id="submit" value="submit" name="submit">
+									<button class="btn btn-common" id="submit" type="submit" value="submit">Login</button>
                   <a class="btn btn-danger" href="<?php echo ROOT_PATH; ?>home">Cancel</a>
                   <div id="msgSubmit" class="h3 text-center hidden"></div> 
 									<div class="clearfix"></div>
