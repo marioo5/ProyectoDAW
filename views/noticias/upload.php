@@ -1,6 +1,6 @@
 <?php
 $target_path = "../../assets/images/";
-$target_path = $target_path . basename( $_FILES['foto']['name']); 
+$target_path = $target_path . basename( $_FILES['foto']['name']);
 if(move_uploaded_file($_FILES['foto']['tmp_name'], $target_path)) {
     echo "El archivo ".  basename( $_FILES['foto']['name']). 
     " ha sido subido";

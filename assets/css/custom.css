@@ -1,2 +1,10 @@
 
 /** ADD YOUR AWESOME CODES HERE **/
+
+.cajatexto {
+
+width: 350px;
+height: 400px;
+overflow: auto;
+
+}

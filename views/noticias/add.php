@@ -37,7 +37,7 @@
 								</div>                                 
 							</div>
 
-							<form enctype="multipart/form-data" action="upload.php" method="POST">
+							<form enctype="multipart/form-data" action="upload.php" method="post">
 							<div class="col-md-12">
 								<div class="form-group">
 									<input class="form-control" id="foto" name="foto" type="file" />
@@ -47,6 +47,7 @@
 							</form>
 							
 								<div class="submit-button text-center">
+									<input type="hidden" id="submit" value="submit" name="submit">
 									<button class="btn btn-common" id="submit" type="submit" value="Submit">Insertar Noticia</button>
                   					<a class="btn btn-danger" href="<?php echo ROOT_PATH; ?>noticias">Cancel</a>
                   					<div id="msgSubmit" class="h3 text-center hidden"></div> 

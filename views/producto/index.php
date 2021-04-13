@@ -114,7 +114,7 @@
 				
 				<div class="col-lg-4 col-md-6 special-grid lunch">
 					<div class="gallery-single fix">
-						<img src="../../assets/images/img-08.jpg" class="img-fluid" alt="Image">
+						<img src="../../assets/images/descarga.jpg" class="img-fluid" alt="Image">
 						<div class="why-text">
 							<h4>Pack Tintos</h4>
 							<p>Sed id magna vitae eros sagittis euismod.</p>
