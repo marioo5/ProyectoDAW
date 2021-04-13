@@ -9,6 +9,20 @@ class Producto extends Controller{
     
     }
 
+    protected function add(){
+
+        if(!isset($_SESSION['is_logged_in']) && $_SESSION['user_data']['rol']=='admin'){
+
+            header('Location: '.ROOT_URL.'producto');
+
+        }
+
+        $viewmodel = new ProductoModel();
+        $this->returnView($viewmodel->add(), true);
+    
+
+    }
+
 
 }
 

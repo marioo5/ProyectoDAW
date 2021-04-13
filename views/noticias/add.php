@@ -11,7 +11,7 @@
 	
 	<!-- Start Contact -->
 	<div class="contact-box">
-  <form method="post" action="<?php $_SERVER['PHP_SELF'];?>">
+  <form method="post" enctype="multipart/form-data" action="upload.php" action="<?php $_SERVER['PHP_SELF'];?>">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
@@ -37,14 +37,12 @@
 								</div>                                 
 							</div>
 
-							<form enctype="multipart/form-data" action="upload.php" method="post">
 							<div class="col-md-12">
 								<div class="form-group">
 									<input class="form-control" id="foto" name="foto" type="file" />
 									<div class="help-block with-errors"></div>
 								</div>
 							</div>
-							</form>
 							
 								<div class="submit-button text-center">
 									<input type="hidden" id="submit" value="submit" name="submit">

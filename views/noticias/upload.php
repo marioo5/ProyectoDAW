@@ -1,32 +1,33 @@
 <?php
-$target_path = "../../assets/images/";
-$target_path = $target_path . basename( $_FILES['foto']['name']);
-if(move_uploaded_file($_FILES['foto']['tmp_name'], $target_path)) {
-    echo "El archivo ".  basename( $_FILES['foto']['name']). 
-    " ha sido subido";
-} else{
-    echo "Ha ocurrido un error, trate de nuevo!";
+//Si se quiere subir una imagen
+if (isset($_POST['submit'])) {
+   //Recogemos el archivo enviado por el formulario
+   $archivo = $_FILES['foto']['name'];
+   //Si el archivo contiene algo y es diferente de vacio
+   if (isset($archivo) && $archivo != "") {
+      //Obtenemos algunos datos necesarios sobre el archivo
+      $tipo = $_FILES['foto']['type'];
+      $tamano = $_FILES['foto']['size'];
+      $temp = $_FILES['foto']['tmp_name'];
+
+      //Se comprueba si el archivo a cargar es correcto observando su extensión y tamaño
+     if (!((strpos($tipo, "gif") || strpos($tipo, "jpeg") || strpos($tipo, "jpg") || strpos($tipo, "png")) && ($tamano < 2000000))) {
+        echo '<div><b>Error. La extensión o el tamaño de los archivos no es correcta.<br/>
+        - Se permiten archivos .gif, .jpg, .png. y de 200 kb como máximo.</b></div>';
+     }
+     else {
+        //Si la imagen es correcta en tamaño y tipo
+        //Se intenta subir al servidor
+        if (move_uploaded_file($temp, 'assets/images/'.$archivo)) {
+            //Mostramos el mensaje de que se ha subido co éxito
+            echo '<div><b>Se ha subido correctamente la imagen.</b></div>';
+            
+        }
+        else {
+           //Si no se ha podido subir la imagen, mostramos un mensaje de error
+           echo '<div><b>Ocurrió algún error al subir el fichero. No pudo guardarse.</b></div>';
+        }
+      }
+   }
 }
-
-$uploadedfileload="true";
-$uploadedfile_size=$_FILES['foto']['size'];
-echo $_FILES['foto']['name'];
-if ($_FILES['foto']['size']>200000)
-{$msg=$msg."El archivo es mayor que 200KB, debes reduzcirlo antes de subirlo<BR>";
-$uploadedfileload="false";}
-
-if (!($_FILES['foto']['type'] =="image/pjpeg" OR $_FILES['foto']['type'] =="image/gif" OR $_FILES['foto']['type'] =="image/png"))
-{$msg=$msg." Tu archivo tiene que ser JPG o GIF. Otros archivos no son permitidos<BR>";
-$uploadedfileload="false";}
-
-$file_name=$_FILES['foto']['name'];
-$add="assets/images/$file_name";
-if($uploadedfileload=="true"){
-
-if(move_uploaded_file ($_FILES['foto']['tmp_name'], $add)){
-echo "Ha sido subido satisfactoriamente";
-}else{echo "Error al subir el archivo";}
-
-}else{echo $msg;}
-
 ?>

@@ -146,7 +146,7 @@
 					<p><span class="text-color">Domingo :</span> 9:00 - 14:00</p>
 				</div>
 				<div class="col-lg-3 col-md-6">
-					<h3>Informacion de Contacto</h3>
+					<h3>Contacto</h3>
 					<p class="lead">Ipsum Street, Lorem Tower, MO, Columbia, 508000</p>
 					<p><a href="<?php echo ROOT_PATH; ?>contact"> daw005.2021@gmail.com</a></p>
 				</div>
@@ -154,7 +154,7 @@
 					<h3>Subscribe</h3>
 					<div class="subscribe_form">
 						<form class="subscribe_form">
-							<button type="submit" class="submit" href="<?php echo ROOT_PATH; ?>users/register">SUBSCRIBIRSE</button>
+							<a class="submit" href="<?php echo ROOT_PATH; ?>users/register">SUBSCRIBIRSE</a>
 							<div class="clearfix"></div>
 						</form>
 					</div>

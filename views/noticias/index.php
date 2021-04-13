@@ -40,7 +40,7 @@
 					</div>
 				</div>
 			<?php endforeach; ?>
-				<?php if(isset($_SESSION['is_logged_in']) && $_SESSION['user_data']['rol']=='usuario') : ?>
+				<?php if(isset($_SESSION['is_logged_in']) && $_SESSION['user_data']['rol']=='admin') : ?>
 				<div class="inner-column">
 				<a class="btn btn-lg btn-circle btn-outline-new-white" href="<?php echo ROOT_PATH; ?>noticias/add">Añadir Noticia</a>
 				</div>

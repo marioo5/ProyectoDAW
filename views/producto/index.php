@@ -26,16 +26,16 @@
 					<div class="special-menu text-center">
 						<div class="button-group filter-button-group">
 							<button class="active" data-filter="*">Todo</button>
-							<button data-filter=".drinks">Blancos</button>
-							<button data-filter=".lunch">Tintos</button>
-							<button data-filter=".dinner">Rosados</button>
+							<button data-filter=".blancos">Blancos</button>
+							<button data-filter=".tintos">Tintos</button>
+							<button data-filter=".rosados">Rosados</button>
 						</div>
 					</div>
 				</div>
 			</div>
 				
 			<div class="row special-list">
-				<div class="col-lg-4 col-md-6 special-grid drinks">
+				<div class="col-lg-4 col-md-6 special-grid blancos">
 					<div class="gallery-single fix">
 						<img src="../../assets/images/img-01.jpg" class="img-fluid" alt="Image">
 						<div class="why-text">
@@ -46,7 +46,7 @@
 					</div>
 				</div>
 				
-				<div class="col-lg-4 col-md-6 special-grid drinks">
+				<div class="col-lg-4 col-md-6 special-grid blancos">
 					<div class="gallery-single fix">
 						<img src="../../assets/images/img-02.jpg" class="img-fluid" alt="Image">
 						<div class="why-text">
@@ -57,7 +57,7 @@
 					</div>
 				</div>
 				
-				<div class="col-lg-4 col-md-6 special-grid drinks">
+				<div class="col-lg-4 col-md-6 special-grid blancos">
 					<div class="gallery-single fix">
 						<img src="../../assets/images/img-03.jpg" class="img-fluid" alt="Image">
 						<div class="why-text">
@@ -68,7 +68,7 @@
 					</div>
 				</div>
 				
-				<div class="col-lg-4 col-md-6 special-grid lunch">
+				<div class="col-lg-4 col-md-6 special-grid tintos">
 					<div class="gallery-single fix">
 						<img src="../../assets/images/img-04.jpg" class="img-fluid" alt="Image">
 						<div class="why-text">
@@ -79,7 +79,7 @@
 					</div>
 				</div>
 				
-				<div class="col-lg-4 col-md-6 special-grid lunch">
+				<div class="col-lg-4 col-md-6 special-grid tintos">
 					<div class="gallery-single fix">
 						<img src="../../assets/images/img-05.jpg" class="img-fluid" alt="Image">
 						<div class="why-text">
@@ -90,7 +90,7 @@
 					</div>
 				</div>
 				
-				<div class="col-lg-4 col-md-6 special-grid lunch">
+				<div class="col-lg-4 col-md-6 special-grid tintos">
 					<div class="gallery-single fix">
 						<img src="../../assets/images/img-06.jpg" class="img-fluid" alt="Image">
 						<div class="why-text">
@@ -101,7 +101,7 @@
 					</div>
 				</div>
 				
-				<div class="col-lg-4 col-md-6 special-grid dinner">
+				<div class="col-lg-4 col-md-6 special-grid rosados">
 					<div class="gallery-single fix">
 						<img src="../../assets/images/img-07.jpg" class="img-fluid" alt="Image">
 						<div class="why-text">
@@ -112,9 +112,9 @@
 					</div>
 				</div>
 				
-				<div class="col-lg-4 col-md-6 special-grid lunch">
+				<div class="col-lg-4 col-md-6 special-grid tintos">
 					<div class="gallery-single fix">
-						<img src="../../assets/images/descarga.jpg" class="img-fluid" alt="Image">
+						<img src="../../assets/images/img-09.jpg" class="img-fluid" alt="Image">
 						<div class="why-text">
 							<h4>Pack Tintos</h4>
 							<p>Sed id magna vitae eros sagittis euismod.</p>
@@ -123,9 +123,9 @@
 					</div>
 				</div>
 				
-				<div class="col-lg-4 col-md-6 special-grid drinks">
+				<div class="col-lg-4 col-md-6 special-grid blancos">
 					<div class="gallery-single fix">
-						<img src="../../assets/images/img-09.jpg" class="img-fluid" alt="Image">
+						<img src="../../assets/images/vinos-galeria.jpg" class="img-fluid" alt="Image">
 						<div class="why-text">
 							<h4>Pack Blancos</h4>
 							<p>Sed id magna vitae eros sagittis euismod.</p>
@@ -138,6 +138,12 @@
 		</div>
 	</div>
 	<!-- End Menu -->
+
+	<?php if(isset($_SESSION['is_logged_in']) && $_SESSION['user_data']['rol']=='admin') : ?>
+				<div class="inner-column">
+				<a class="btn btn-lg btn-circle btn-outline-new-white" href="<?php echo ROOT_PATH; ?>producto/add">Añadir Producto</a>
+				</div>
+	<?php endif; ?>
 	
 	<!-- Start QT -->
 	<div class="qt-box qt-background">
