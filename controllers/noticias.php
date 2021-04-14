@@ -23,6 +23,22 @@ class Noticias extends Controller{
 
     }
 
+    protected function upload (){
+
+        $viewmodel = new NoticiasModel();
+        $viewmodel->upload();
+        $this->returnView($viewmodel->add(), true);
+
+
+    }
+
+    protected function delete (){
+
+        $viewmodel = new NoticiasModel();
+        $this->returnView($viewmodel->delete(), true);
+
+    }
+
 
 }
 

@@ -11,7 +11,7 @@
 	
 	<!-- Start Contact -->
 	<div class="contact-box">
-  <form method="post" enctype="multipart/form-data" action="upload.php" action="<?php $_SERVER['PHP_SELF'];?>">
+  <form method="post" enctype="multipart/form-data" action="upload">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
@@ -30,7 +30,8 @@
 									<div class="help-block with-errors"></div>
 								</div>                                 
 							</div>
-              <div class="col-md-12">
+
+              				<div class="col-md-12">
 								<div class="form-group">
 									<textarea class="form-control" id="textarea_com" name="descripcion" placeholder="Introduce una descripcion ..." required data-error="<?php echo $errorMSG; ?>" rows="4"></textarea>
 									<div class="help-block with-errors"></div>
@@ -38,16 +39,23 @@
 							</div>
 
 							<div class="col-md-12">
-										<div class="form-group">
-											<select class="custom-select d-block form-control" id="tipo" name="tipo" required data-error="Please select Person">
+									<div class="form-group">
+										<select class="custom-select d-block form-control" id="tipo" name="tipo" required data-error="Selecciona el tipo de vino">
 											  <option disabled selected>Elige el tipo de vino*</option>
-											  <option value="1">Tinto</option>
-											  <option value="2">Blanco</option>
-											  <option value="3">Rosado</option>
-											</select>
-											<div class="help-block with-errors"></div>
-										</div> 
-									</div>
+											  <option value="tinto">Tinto</option>
+											  <option value="blanco">Blanco</option>
+											  <option value="rosado">Rosado</option>
+										</select>
+										<div class="help-block with-errors"></div>
+									</div> 
+							</div>
+
+							<div class="col-md-12">
+								<div class="form-group">
+									<input type="text" class="form-control" id="precio" name="precio" placeholder="Introduce el precio ..." required data-error="<?php echo $errorMSG; ?>">
+									<div class="help-block with-errors"></div>
+								</div>                                 
+							</div>
 
 							<div class="col-md-12">
 								<div class="form-group">

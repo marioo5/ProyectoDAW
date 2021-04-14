@@ -35,7 +35,10 @@
 								<li><span><?php echo $item['Fecha']; ?></span></li>
 							</ul>
 							<p><?php echo $item['Descripcion']; ?></p>
-							<a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Eliminar</a>
+							<form method="post" action="noticias/delete">
+							<input type="hidden" name="delete_id" value="<?php echo $item['IdNoticia']; ?>">
+							<input class="btn btn-common" type="submit" name="delete" value="Eliminar" />
+							</form>
 						</div>
 					</div>
 				</div>

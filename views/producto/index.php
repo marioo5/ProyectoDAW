@@ -1,3 +1,4 @@
+<?php include ('upload.php'); ?>
 <!-- Start All Pages -->
 	<div class="all-page-title page-breadcrumb">
 		<div class="container text-center">
@@ -26,114 +27,27 @@
 					<div class="special-menu text-center">
 						<div class="button-group filter-button-group">
 							<button class="active" data-filter="*">Todo</button>
-							<button data-filter=".blancos">Blancos</button>
-							<button data-filter=".tintos">Tintos</button>
-							<button data-filter=".rosados">Rosados</button>
+							<button data-filter=".blanco">Blancos</button>
+							<button data-filter=".tinto">Tintos</button>
+							<button data-filter=".rosado">Rosados</button>
 						</div>
 					</div>
 				</div>
 			</div>
 				
 			<div class="row special-list">
-				<div class="col-lg-4 col-md-6 special-grid blancos">
+			<?php foreach($viewmodel as $item) : ?>
+				<div class="<?php echo 'col-lg-4 col-md-6 special-grid '.$item['Tipo'];?>">
 					<div class="gallery-single fix">
-						<img src="../../assets/images/img-01.jpg" class="img-fluid" alt="Image">
+						<img src="<?php echo '../../assets/images/'.$item['Foto']; ?>" class="img-fluid" alt="Image">
 						<div class="why-text">
-							<h4>Blanco Viura Rual</h4>
-							<p>Sed id magna vitae eros sagittis euismod.</p>
-							<h5> $7.79</h5>
+							<h4><?php echo $item['Titulo']; ?></h4>
+							<p><?php echo $item['Descripcion']; ?></p>
+							<h5><?php echo $item['Precio']; ?></h5>
 						</div>
 					</div>
 				</div>
-				
-				<div class="col-lg-4 col-md-6 special-grid blancos">
-					<div class="gallery-single fix">
-						<img src="../../assets/images/img-02.jpg" class="img-fluid" alt="Image">
-						<div class="why-text">
-							<h4>Blanco Chardone</h4>
-							<p>Sed id magna vitae eros sagittis euismod.</p>
-							<h5> $9.79</h5>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-lg-4 col-md-6 special-grid blancos">
-					<div class="gallery-single fix">
-						<img src="../../assets/images/img-03.jpg" class="img-fluid" alt="Image">
-						<div class="why-text">
-							<h4>Tempranillo Blanco Rual</h4>
-							<p>Sed id magna vitae eros sagittis euismod.</p>
-							<h5> $10.79</h5>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-lg-4 col-md-6 special-grid tintos">
-					<div class="gallery-single fix">
-						<img src="../../assets/images/img-04.jpg" class="img-fluid" alt="Image">
-						<div class="why-text">
-							<h4>Tinto Rual Joven</h4>
-							<p>Sed id magna vitae eros sagittis euismod.</p>
-							<h5> $15.79</h5>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-lg-4 col-md-6 special-grid tintos">
-					<div class="gallery-single fix">
-						<img src="../../assets/images/img-05.jpg" class="img-fluid" alt="Image">
-						<div class="why-text">
-							<h4>Tinto Rual Crianza</h4>
-							<p>Sed id magna vitae eros sagittis euismod.</p>
-							<h5> $18.79</h5>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-lg-4 col-md-6 special-grid tintos">
-					<div class="gallery-single fix">
-						<img src="../../assets/images/img-06.jpg" class="img-fluid" alt="Image">
-						<div class="why-text">
-							<h4>Tinto Rual Reserva</h4>
-							<p>Sed id magna vitae eros sagittis euismod.</p>
-							<h5> $20.79</h5>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-lg-4 col-md-6 special-grid rosados">
-					<div class="gallery-single fix">
-						<img src="../../assets/images/img-07.jpg" class="img-fluid" alt="Image">
-						<div class="why-text">
-							<h4>Rosado Rual</h4>
-							<p>Sed id magna vitae eros sagittis euismod.</p>
-							<h5> $25.79</h5>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-lg-4 col-md-6 special-grid tintos">
-					<div class="gallery-single fix">
-						<img src="../../assets/images/img-09.jpg" class="img-fluid" alt="Image">
-						<div class="why-text">
-							<h4>Pack Tintos</h4>
-							<p>Sed id magna vitae eros sagittis euismod.</p>
-							<h5> $22.79</h5>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-lg-4 col-md-6 special-grid blancos">
-					<div class="gallery-single fix">
-						<img src="../../assets/images/vinos-galeria.jpg" class="img-fluid" alt="Image">
-						<div class="why-text">
-							<h4>Pack Blancos</h4>
-							<p>Sed id magna vitae eros sagittis euismod.</p>
-							<h5> $24.79</h5>
-						</div>
-					</div>
-				</div>
-				
+			<?php endforeach; ?>
 			</div>
 		</div>
 	</div>

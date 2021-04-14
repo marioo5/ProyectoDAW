@@ -11,7 +11,7 @@
 	
 	<!-- Start Contact -->
 	<div class="contact-box">
-  <form method="post" enctype="multipart/form-data" action="upload.php" action="<?php $_SERVER['PHP_SELF'];?>">
+  <form method="post" enctype="multipart/form-data" action="upload">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
@@ -30,7 +30,7 @@
 									<div class="help-block with-errors"></div>
 								</div>                                 
 							</div>
-              <div class="col-md-12">
+              				<div class="col-md-12">
 								<div class="form-group">
 									<textarea class="form-control" id="textarea_com" name="descripcion" placeholder="Introduce una descripcion ..." required data-error="<?php echo $errorMSG; ?>" rows="4"></textarea>
 									<div class="help-block with-errors"></div>

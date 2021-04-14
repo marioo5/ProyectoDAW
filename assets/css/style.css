@@ -315,8 +315,7 @@ button:focus{
 }
 .inner-column{
 
-    display: flex;
-    padding: 70px 0px;
+    padding: 20px 0px;
    
 }
 .inner-column h1{
