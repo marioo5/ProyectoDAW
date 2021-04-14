@@ -11,6 +11,7 @@ class ProductoModel extends Model{
     }
 
     public function add (){
+        
         $post = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
 
         if(isset($post['submit'])){

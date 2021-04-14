@@ -9,6 +9,29 @@ class Enoturismo extends Controller{
     
     }
 
+    protected function add(){
+
+        if(!isset($_SESSION['is_logged_in'])){
+
+            header('Location: '.ROOT_URL.'enoturismo');
+
+        }
+
+        $viewmodel = new EnoturismoModel();
+        $this->returnView($viewmodel->add(), true);
+    
+
+    }
+
+    protected function upload (){
+
+        $viewmodel = new EnoturismoModel();
+        $viewmodel->upload();
+        $this->returnView($viewmodel->add(), true);
+
+
+    }
+
 
 }
 

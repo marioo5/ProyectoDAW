@@ -39,7 +39,7 @@
 							</div>
 							<div class="col-md-12">
 								<div class="form-group"> 
-									<textarea class="form-control" id="message" placeholder="Tu Mensaje" rows="4" data-error="<?php echo $errorMSG; ?>" required></textarea>
+									<textarea class="form-control" id="message" name="message" placeholder="Tu Mensaje" rows="4" data-error="<?php echo $errorMSG; ?>" required></textarea>
 									<div class="help-block with-errors"></div>
 								</div>
 								<div class="submit-button text-center">
