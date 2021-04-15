@@ -55,13 +55,9 @@
 										<div class="form-group">
 											<select class="custom-select d-block form-control" id="person" required data-error="Please select Person">
 											  <option disabled selected>Elige la hora*</option>
-											  <option value="1">1</option>
-											  <option value="2">2</option>
-											  <option value="3">3</option>
-											  <option value="4">4</option>
-											  <option value="5">5</option>
-											  <option value="6">6</option>
-											  <option value="7">7</option>
+											  <?php foreach($viewmodel as $item) : ?>
+											  <option value="<?php echo $item['Hora']; ?>"><?php echo $item['Hora']; ?></option>
+											  <?php endforeach ; ?>	
 											</select>
 											<div class="help-block with-errors"></div>
 										</div> 
