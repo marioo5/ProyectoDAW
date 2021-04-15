@@ -4,7 +4,9 @@ class ReservaModel extends Model{
 
     public function Index(){
 
-        return;
+        $this->query('select * from actividad');
+        $rows = $this->resultSet();
+        return $rows;
 
     }
 

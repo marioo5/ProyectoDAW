@@ -16,7 +16,7 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="heading-title text-center">
-						<h2>Nuevo Producto</h2>
+						<h2>Nuevo Actividad</h2>
 					</div>
 				</div>
 			</div>

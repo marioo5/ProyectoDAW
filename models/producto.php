@@ -16,12 +16,12 @@ class ProductoModel extends Model{
 
         if(isset($post['submit'])){
 
-            if($post['titulo'] == '' || $post['descripcion'] == '' || $_FILES['foto']['name'] == '' || $post['tipo'] == '' || $post['precio']){
+            if($post['titulo'] == '' || $post['descripcion'] == '' || $_FILES['foto']['name'] == '' || $post['tipo'] == '' || $post['precio'] == ''){
 
                 Messages::setMsg('Please Fill In All Fields', 'error');
                 return;
             }
-
+            
             $this->query('insert into producto (titulo,descripcion,foto,tipo,precio) values (:titulo,:descripcion,:foto,:tipo,:precio)');
             $this->bind(':titulo', $post['titulo']);
             $this->bind(':descripcion', $post['descripcion']);

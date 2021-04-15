@@ -30,22 +30,24 @@
 									<h3>Elige la actividad</h3>
 									<div class="col-md-12">
 										<div class="form-group">
-										<select class="custom-select d-block form-control" id="person" required data-error="Please select Person">
+										<select class="custom-select d-block form-control" id="titulo" name="titulo" required data-error="Elige una actividad">
 											  <option disabled selected>Selecciona la Actividad*</option>
-											  <option value="1">1</option>
-											  <option value="2">2</option>
-											  <option value="3">3</option>
-											  <option value="4">4</option>
-											  <option value="5">5</option>
-											  <option value="6">6</option>
-											  <option value="7">7</option>
+											  <?php foreach($viewmodel as $item) : ?>
+											  <option value="<?php echo $item['IdActividad']; ?>"><?php echo $item['Titulo']; ?></option>
+											  <?php endforeach ; ?>											 
 											</select>
 											<div class="help-block with-errors"></div>
 										</div>                                 
 									</div>
 									<div class="col-md-12">
 										<div class="form-group">
-											<input id="input_time" class="time form-control picker__input" placeholder="Introduce el numero de personas ..." required data-error="Please enter time">
+											<input id="personas" name="personas" class="form-control" placeholder="Introduce el numero de personas ..." required data-error="Porfavor introduce el número de personas">
+											<div class="help-block with-errors"></div>
+										</div>                                 
+									</div>
+									<div class="col-md-12">
+										<div class="form-group">
+											<input type="date" id="fecha" name="fecha" class="form-control" required data-error="Porfavor introduce la fecha">
 											<div class="help-block with-errors"></div>
 										</div>                                 
 									</div>
@@ -66,16 +68,16 @@
 									</div>
 								</div>
 								<div class="col-md-6">
-									<h3>Contact Details</h3>
+									<h3>Detalles de Contacto</h3>
 									<div class="col-md-12">
 										<div class="form-group">
-											<input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required data-error="Please enter your name">
+											<input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu Name" value="<?php echo $_SESSION['user_data']['name']; ?>">
 											<div class="help-block with-errors"></div>
 										</div>                                 
 									</div>
 									<div class="col-md-12">
 										<div class="form-group">
-											<input type="text" placeholder="Your Email" id="email" class="form-control" name="email" required data-error="Please enter your email">
+											<input type="text" placeholder="Tu Email" id="email" class="form-control" name="email" value="<?php echo $_SESSION['user_data']['email']; ?>">
 											<div class="help-block with-errors"></div>
 										</div> 
 									</div>
