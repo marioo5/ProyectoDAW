@@ -52,6 +52,9 @@
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" id="dropdown-a" data-toggle="dropdown">Enoturismo</a>
 							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+							<?php if(isset($_SESSION['is_logged_in']) && $_SESSION['user_data']['rol']=='admin') : ?>
+								<a class="dropdown-item" href="<?php echo ROOT_PATH; ?>horas">Horas</a>
+							<?php endif; ?>
 							<?php if(isset($_SESSION['is_logged_in'])) : ?>
 								<a class="dropdown-item" href="<?php echo ROOT_PATH; ?>reserva">Reservas</a>
 							<?php endif; ?>
