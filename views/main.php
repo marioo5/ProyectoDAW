@@ -20,12 +20,15 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">    
 	<!-- Site CSS -->
-    <link rel="stylesheet" href="../assets/css/style.css">    
+    <link rel="stylesheet" href="../assets/css/style.css">   
+	<link rel="stylesheet" href="../assets/css/bootstrap-icons.css">  
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="../assets/css/responsive.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../assets/css/custom.css">
 
+	<!-- CSS only -->
+	
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -63,15 +66,9 @@
 								<a class="dropdown-item" href="<?php echo ROOT_PATH; ?>enoturismo">Actividades</a>
 							</div>
 						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" id="dropdown-a" data-toggle="dropdown">Blog</a>
-							<div class="dropdown-menu" aria-labelledby="dropdown-a">
-							<?php if(isset($_SESSION['is_logged_in'])) : ?>
-								<a class="dropdown-item" href="<?php echo ROOT_PATH; ?>noticias">Noticias</a>
-								<?php endif; ?>
-								<a class="dropdown-item" href="<?php echo ROOT_PATH; ?>eventos">Eventos</a>
-							</div>
-						</li>
+						<?php if(isset($_SESSION['is_logged_in'])) : ?>
+							<li class="nav-item"><a class="nav-link" href="<?php echo ROOT_PATH; ?>noticias">Noticias</a></li>
+						<?php endif; ?>	
 						<li class="nav-item"><a class="nav-link" href="<?php echo ROOT_PATH; ?>contact">Contacto</a></li>
 						<?php if(isset($_SESSION['is_logged_in'])) : ?>
 						<li class="nav-item"><a class="nav-link" href="<?php echo ROOT_PATH; ?>users/logout">Deslogearse</a></li>
@@ -123,7 +120,7 @@
 					<div class="overflow-hidden">
 						<h4>Dirección</h4>
 						<p class="lead">
-							800, Lorem Street, US
+							Castilseco, La Rioja
 						</p>
 					</div>
 				</div>
@@ -139,7 +136,7 @@
 			<div class="row">
 				<div class="col-lg-3 col-md-6">
 					<h3>Sobre Nosotros</h3>
-					<p>Integer cursus scelerisque ipsum id efficitur. Donec a dui fringilla, gravida lorem ac, semper magna. Aenean rhoncus ac lectus a interdum. Vivamus semper posuere dui, at ornare turpis ultrices sit amet. Nulla cursus lorem ut nisi porta, ac eleifend arcu ultrices.</p>
+					<p>Somos una bodega familiar que cultivamos nuestros propios viñedos en una zona absolutamente privilegiada, situada en Castilseco, Rioja Alta.</p>
 				</div>
 				<div class="col-lg-3 col-md-6">
 					<h3>Horario</h3>
@@ -150,7 +147,7 @@
 				</div>
 				<div class="col-lg-3 col-md-6">
 					<h3>Contacto</h3>
-					<p class="lead">Ipsum Street, Lorem Tower, MO, Columbia, 508000</p>
+					<p class="lead">Castilseco, La Rioja, Calle Carretera 14</p>
 					<p><a href="<?php echo ROOT_PATH; ?>contact"> daw005.2021@gmail.com</a></p>
 				</div>
 				<div class="col-lg-3 col-md-6">

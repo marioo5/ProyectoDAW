@@ -35,7 +35,7 @@
 							<h1 class="m-b-20"><strong>Bienvenido a <br> Bodegas Ruiz Alfaya</strong></h1>
 							<p class="m-b-40">See how your users experience your website in realtime or view  <br> 
 							trends to see any changes in performance over time.</p>
-							<p><a class="btn btn-lg btn-circle btn-outline-new-white" href="<?php echo ROOT_PATH; ?>eventos">Eventos</a></p>
+							<p><a class="btn btn-lg btn-circle btn-outline-new-white" href="<?php echo ROOT_PATH; ?>noticias">Noticias</a></p>
 						</div>
 					</div>
 				</div>
@@ -59,8 +59,8 @@
 					<div class="inner-column">
 						<h1><span>Bodegas Ruiz Alfaya</span></h1>
 						<h4>Historia</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor suscipit feugiat. Ut at pellentesque ante, sed convallis arcu. Nullam facilisis, eros in eleifend luctus, odio ante sodales augue, eget lacinia lectus erat et sem. </p>
-						<p>Sed semper orci sit amet porta placerat. Etiam quis finibus eros. Sed aliquam metus lorem, a pellentesque tellus pretium a. Nulla placerat elit in justo vestibulum, et maximus sem pulvinar.</p>
+						<p>La bodega cuenta con sus propios viñedos, tenemos una extensión aproximada de 17 hectáreas, ubicadas en La Rioja Alta, entre los municipios de Sajazarra, Cuzcurrita de Rio Tirón, Villalba de Rioja.</p>
+						<p>El mayor porcentaje de las hectáreas se encuentran en Castilseco, donde también está la Bodega. </p>
 						<a class="btn btn-lg btn-circle btn-outline-new-white" href="<?php echo ROOT_PATH; ?>historia">Historia</a>
 					</div>
 				</div>

@@ -13,7 +13,7 @@ class Horas extends Controller{
 
         if(!isset($_SESSION['is_logged_in'])){
 
-            header('Location: '.ROOT_URL.'reservas');
+            header('Location: '.ROOT_URL.'reserva');
 
         }
 

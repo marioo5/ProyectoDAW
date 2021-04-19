@@ -13,13 +13,20 @@ class Reserva extends Controller{
 
         if(!isset($_SESSION['is_logged_in'])){
 
-            header('Location: '.ROOT_URL.'reservas');
+            header('Location: '.ROOT_URL.'reserva');
 
         }
 
         $viewmodel = new ReservaModel();
         $this->returnView($viewmodel->add(), true);
     
+
+    }
+
+    protected function delete (){
+
+        $viewmodel = new ReservaModel();
+        $this->returnView($viewmodel->delete(), true);
 
     }
 

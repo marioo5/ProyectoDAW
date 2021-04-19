@@ -35,10 +35,12 @@
 								<li><span><?php echo $item['Fecha']; ?></span></li>
 							</ul>
 							<p><?php echo $item['Descripcion']; ?></p>
+							<?php if(isset($_SESSION['is_logged_in']) && $_SESSION['user_data']['rol']=='admin') : ?>
 							<form method="post" action="noticias/delete">
 							<input type="hidden" name="delete_id" value="<?php echo $item['IdNoticia']; ?>">
 							<input class="btn btn-common" type="submit" name="delete" value="Eliminar" />
 							</form>
+							<?php endif; ?>
 						</div>
 					</div>
 				</div>

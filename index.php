@@ -21,7 +21,6 @@ require ('controllers/reserva.php');
 require ('controllers/productos.php');
 require ('controllers/historia.php');
 require ('controllers/noticias.php');
-require ('controllers/eventos.php');
 require ('controllers/horas.php');
 
 
@@ -36,7 +35,6 @@ require ('models/reserva.php');
 require ('models/producto.php');
 require ('models/historia.php');
 require ('models/noticias.php');
-require ('models/eventos.php');
 require ('models/horas.php');
 
 $bootstrap = new Bootstrap($_GET);
