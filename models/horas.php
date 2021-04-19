@@ -6,12 +6,14 @@ class HorasModel extends Model{
 
         $this->query('select * from actividad');
         $rows = $this->resultSet();
+        return $rows;
 
+    }
+
+    public function add (){
+        
         $post = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
 
-        print_r($post);
-        die();
-       
         if(isset($post['submit'])){
 
 
@@ -28,15 +30,12 @@ class HorasModel extends Model{
 
             if($this->lastInsertId()){
 
-                header('Location: '.ROOT_URL.'reservas');
+                header('Location: '.ROOT_URL.'reserva');
 
             }
         }
 
-        return $rows;
-
-
-
+        return;
     }
 
 

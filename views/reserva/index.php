@@ -24,7 +24,7 @@
 			<div class="row">
 				<div class="col-lg-12 col-sm-12 col-xs-12">
 					<div class="contact-block">
-						<form method="post" id="contactForm">
+						<form method="post" action="add">
 							<div class="row">
 								<div class="col-md-6">
 									<h3>Elige la actividad</h3>
