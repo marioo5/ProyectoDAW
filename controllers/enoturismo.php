@@ -32,6 +32,14 @@ class Enoturismo extends Controller{
 
     }
 
+    protected function update (){
+
+        $viewmodel = new EnoturismoModel();
+        $viewmodel->upload();
+        $this->returnView($viewmodel->update(), true);
+
+    }
+
 
 }
 

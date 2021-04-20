@@ -36,7 +36,7 @@
 				
 			<div class="row special-list">
 				
-			<?php foreach($viewmodel as $item) : ?>
+			 <?php foreach($viewmodel as $item) : ?>
 				<div class="<?php echo 'col-lg-4 col-md-6 special-grid '.$item['Tipo'];?>">
 					<div class="gallery-single fix">
 						<img src="<?php echo '../../assets/images/'.$item['Foto']; ?>" class="img-fluid" alt="Image">
@@ -44,10 +44,14 @@
 							<h4><?php echo $item['Titulo']; ?></h4>
 							<p><?php echo $item['Descripcion']; ?></p>
 							<h5><?php echo $item['Precio']; ?></h5>
+							<?php if(isset($_SESSION['is_logged_in']) && $_SESSION['user_data']['rol']=='admin') : ?>
+							<input type="hidden" name="update_id" value="<?php echo $item['IdActividad']; ?>">
+							<a class="nav-link" href="<?php echo ROOT_PATH; ?>enoturismo/update">Modificar</a>
+							<?php endif; ?>
 						</div>
 					</div>
 				</div>
-			<?php endforeach; ?>
+			 <?php endforeach; ?>
 				
 			</div>
 		</div>

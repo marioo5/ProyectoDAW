@@ -151,7 +151,7 @@
 					<p><a href="<?php echo ROOT_PATH; ?>contact"> daw005.2021@gmail.com</a></p>
 				</div>
 				<div class="col-lg-3 col-md-6">
-					<h3>Subscribe</h3>
+					<h3>Subscribete</h3>
 					<div class="subscribe_form">
 						<form class="subscribe_form">
 							<a class="submit" href="<?php echo ROOT_PATH; ?>users/register">SUBSCRIBIRSE</a>

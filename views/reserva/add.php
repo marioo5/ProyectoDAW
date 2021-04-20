@@ -1,3 +1,4 @@
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <!-- Start All Pages -->
 <div class="all-page-title page-breadcrumb">
 		<div class="container text-center">
@@ -55,13 +56,16 @@
 										<div class="form-group">
 											<select class="custom-select d-block form-control" id="hora" name="hora" required data-error="Please select Person">
 											  <option disabled selected>Elige la hora*</option>
-											  <?php foreach($viewmodel as $item) : ?>
-											  <option value="<?php echo $item['Hora']; ?>"><?php echo $item['Hora']; ?></option>
-											  <?php endforeach ; ?>	
+											  <?php /* foreach($viewmodel as $item) : */?>
+											  <option value="<?php /* echo $item['Hora']; */?>"><?php /* echo $item['Hora'];*/ ?></option>
+											  <?php /* endforeach ;*/ ?>	
 											</select>
 											<div class="help-block with-errors"></div>
 										</div> 
 									</div>
+
+									<div id="select2lista"></div>
+
 								</div>
 								<div class="col-md-6">
 									<h3>Detalles de Contacto</h3>
@@ -95,5 +99,28 @@
 		</div>
 	</div>
 	<!-- End Reservation -->
+	<script type="text/javascript">
+	$(document).ready(function(){
+		//$('#actividad').val(1);
+		recargarLista();
+
+		$('#actividad').change(function(){
+			recargarLista();
+		});
+	})
+	</script>
+	<script type="text/javascript">
+	function recargarLista(){
+		$.ajax({
+			type:"POST",
+			url:"datos.php",
+			data:"actividad=" + $('#actividad').val(),
+			success:function(r){
+				$('#select2lista').html(r);
+			}
+		});
+	}
+</script>
+
 	
 	

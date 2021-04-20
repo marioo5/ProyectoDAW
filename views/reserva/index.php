@@ -50,7 +50,5 @@
 				<a class="btn btn-lg btn-circle btn-outline-new-white" href="<?php echo ROOT_PATH; ?>reserva/add">Hacer Reserva</a>
 				</div>
 				<?php endif; ?>
-
-
 </div>
 		

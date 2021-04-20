@@ -12,7 +12,7 @@ class ReservaModel extends Model{
 
     public function add (){
 
-        $this->query('select a.*,h.* from actividad a join horasact h on a.IdActividad=h.IdActividad');
+        $this->query('select * from actividad');
         $rows = $this->resultSet();
         
         
@@ -59,14 +59,12 @@ class ReservaModel extends Model{
 
                 }
 
-        header('Location: '.ROOT_URL.'reserva');
-    
-            
+        header('Location: '.ROOT_URL.'reserva');  
             
         return;
         
-
     }
+
 
 }
 
