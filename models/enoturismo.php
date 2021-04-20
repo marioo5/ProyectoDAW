@@ -74,42 +74,36 @@ class EnoturismoModel extends Model{
          }
     }
 
-    public function update (){
 
-        $post = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
-       
-        if(isset($post['submit'])){
+    public function update(){
+          
+            $post = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING); 
+    
+                if(isset($post['submit'])){
+                    
+                    $this->query('update actividad set titulo=:titulo,descripcion=:descripcion,foto=:foto,tipo=:tipo,precio=:precio where IdActividad=:id');
+                    $this->bind(':id', $post['IdActividad']);
+                    $this->bind(':titulo', $post['titulo']);
+                    $this->bind(':descripcion', $post['descripcion']);
+                    $this->bind(':foto', $_FILES['foto']['name']);
+                    $this->bind(':tipo', $post['tipo']);
+                    $this->bind(':precio', $post['precio']);
+                    $this->execute();
+                        
+                    header('Location: '.ROOT_URL.'enoturismo');
+    
+                }else if(isset($_GET['update_id'])){
 
+                    $post = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING); 
 
-            if($post['titulo'] == '' || $post['descripcion'] == '' || $_FILES['foto']['name'] == '' || $post['tipo'] == '' || $post['precio'] == ''){
+                    $this->query('select * from actividad where IdActividad=:id');
+                    $this->bind(':id', $post['IdActividad']);
+                    $rows = $this->resultSet();
+                    return $rows;     
+                
+                }
 
-                Messages::setMsg('Please Fill In All Fields', 'error');
-                return;
-            }
-
-            $this->query('update actividad set titulo=:titulo,descripcion=:descripcion,foto=:foto,tipo=:tipo,precio=:precio where IdActividad=:id');
-            $this->bind(':id', $post['IdActividad']);
-            $this->bind(':titulo', $post['titulo']);
-            $this->bind(':descripcion', $post['descripcion']);
-            $this->bind(':foto', $_FILES['foto']['name']);
-            $this->bind(':tipo', $post['tipo']);
-            $this->bind(':precio', $post['precio']);
-            $this->execute();
-
-            if($this->lastInsertId()){
-
-                header('Location: '.ROOT_URL.'enoturismo');
-
-            }
         }
-
-        $this->query('select * from actividad where IdActividad=:id');
-        $this->bind(':id', $post['IdActividad']);
-        $rows = $this->resultSet();
-        return $rows;
-
-
-    }
 
 }
 

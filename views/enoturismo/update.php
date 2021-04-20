@@ -26,14 +26,14 @@
 						<div class="row">
 							<div class="col-md-12">
 								<div class="form-group">
-									<input type="text" class="form-control" id="titulo" name="titulo" value="" required data-error="<?php echo $errorMSG; ?>">
+									<input type="text" class="form-control" id="titulo" name="titulo" value="<?php echo $viewmodel['Titulo']; ?>">
 									<div class="help-block with-errors"></div>
 								</div>                                 
 							</div>
 
               				<div class="col-md-12">
 								<div class="form-group">
-									<textarea class="form-control" id="textarea_com" name="descripcion" placeholder="Introduce una descripcion ..." required data-error="<?php echo $errorMSG; ?>" rows="4"></textarea>
+									<textarea class="form-control" id="textarea_com" name="descripcion" value="<?php echo $viewmodel['Descripcion']; ?>" rows="4"></textarea>
 									<div class="help-block with-errors"></div>
 								</div>                                 
 							</div>
@@ -52,7 +52,7 @@
 
 							<div class="col-md-12">
 								<div class="form-group">
-									<input type="text" class="form-control" id="precio" name="precio" placeholder="Introduce el precio ..." required data-error="<?php echo $errorMSG; ?>">
+									<input type="text" class="form-control" id="precio" name="precio" placeholder="Introduce el precio ..." value="<?php echo $viewmodel['Precio'] ?>" ?>">
 									<div class="help-block with-errors"></div>
 								</div>                                 
 							</div>
@@ -67,7 +67,7 @@
 								<div class="submit-button text-center">
 									<input type="hidden" id="submit" value="submit" name="submit">
 									<button class="btn btn-common" id="submit" type="submit" value="Submit">Actualizar Actividad</button>
-                  					<a class="btn btn-danger" href="<?php echo ROOT_PATH; ?>producto">Cancel</a>
+                  					<a class="btn btn-danger" href="<?php echo ROOT_PATH; ?>enoturismo">Cancel</a>
                   					<div id="msgSubmit" class="h3 text-center hidden"></div> 
 									<div class="clearfix"></div>
 								</div>
