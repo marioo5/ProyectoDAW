@@ -54,7 +54,7 @@
 
 				<div class="col-md-4 col-sm-6">
 					<div class="our-team">
-						<img src="<?php echo ROOT_PATH; ?>assets/images/stuff-img-02.jpg">
+						<img src="<?php echo ROOT_PATH; ?>assets/images/stuff-img-03.jpg">
 						<div class="team-content">
 							<h3 class="title">Mario Carreras</h3>
 							<span class="post">Desarrollador Web</span>

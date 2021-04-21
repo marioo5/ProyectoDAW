@@ -23,27 +23,28 @@
 			</div>
 			<div class="row">
 				<div class="col-lg-12">
-					<form id="contactForm" action="<?php $_SERVER['PHP_SELF'];?>">
+					<form method="post" action="">
 						<div class="row">
 							<div class="col-md-12">
 								<div class="form-group">
-									<input type="text" class="form-control" id="name" name="name" placeholder="Tu Nombre" required data-error="<?php echo $errorMSG; ?>">
+									<input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu Nombre" required data-error="<?php echo $errorMSG; ?>">
 									<div class="help-block with-errors"></div>
 								</div>                                 
 							</div>
 							<div class="col-md-12">
 								<div class="form-group">
-									<input type="text" placeholder="Tu Email" id="email" class="form-control" name="email" required data-error="<?php echo $errorMSG; ?>">
+									<input type="text" class="form-control" placeholder="Tu Email" id="email" name="email" required data-error="<?php echo $errorMSG; ?>">
 									<div class="help-block with-errors"></div>
 								</div> 
 							</div>
 							<div class="col-md-12">
 								<div class="form-group"> 
-									<textarea class="form-control" id="message" name="message" placeholder="Tu Mensaje" rows="4" data-error="<?php echo $errorMSG; ?>" required></textarea>
+									<textarea class="form-control" id="mensaje" name="mensaje" placeholder="Tu Mensaje" rows="4" data-error="<?php echo $errorMSG; ?>" required></textarea>
 									<div class="help-block with-errors"></div>
 								</div>
 								<div class="submit-button text-center">
-									<button class="btn btn-common" id="submit" type="submit" value="Submit">Enviar Mensaje</button>
+								<input type="hidden" id="submit" value="submit" name="submit">
+								<button class="btn btn-common" id="submit" type="submit" value="Submit">Enviar Mensaje</button>
 								</div>
 							</div>
 						</div>            

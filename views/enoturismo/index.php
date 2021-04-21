@@ -70,9 +70,9 @@
 			<div class="row">
 				<div class="col-md-8 ml-auto mr-auto text-left">
 					<p class="lead ">
-						" If you're not the one cooking, stay out of the way and compliment the chef. "
+						"Si bien la penicilina cura a los hombres, el vino les hace felices."
 					</p>
-					<span class="lead">Michael Strahan</span>
+					<span class="lead">Alexander Fleming</span>
 				</div>
 			</div>
 		</div>

@@ -1,4 +1,3 @@
-<?php include ('upload.php'); ?>
 <!-- Start All Pages -->
 	<div class="all-page-title page-breadcrumb">
 		<div class="container text-center">
