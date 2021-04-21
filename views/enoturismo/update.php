@@ -10,8 +10,8 @@
 	<!-- End All Pages -->
 	
 	<!-- Start Contact -->
-	<div class="contact-box">
-  <form method="post" enctype="multipart/form-data" action="upload">
+<div class="contact-box">
+  <form method="post" enctype="multipart/form-data" action="">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
@@ -20,7 +20,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row">	
 				<div class="col-lg-12">
 					<form id="contactForm">
 						<div class="row">
@@ -33,7 +33,7 @@
 
               				<div class="col-md-12">
 								<div class="form-group">
-									<textarea class="form-control" id="textarea_com" name="descripcion" value="<?php echo $viewmodel['Descripcion']; ?>" rows="4"></textarea>
+									<textarea class="form-control" id="textarea_com" name="descripcion" rows="4"><?php echo $viewmodel['Descripcion']; ?></textarea>
 									<div class="help-block with-errors"></div>
 								</div>                                 
 							</div>
@@ -41,10 +41,19 @@
 							<div class="col-md-12">
 									<div class="form-group">
 										<select class="custom-select d-block form-control" id="tipo" name="tipo" required data-error="Selecciona el tipo de vino">
-											  <option disabled selected>Elige el tipo de Actividad*</option>
-											  <option value="catas">Catas</option>
+											<?php if($viewmodel['Tipo'] == "catas") : ?>
+											  <option value="<?php echo $viewmodel['Tipo']; ?>" ><?php echo $viewmodel['Tipo']; ?></option>
 											  <option value="visitas">Visitas</option>
 											  <option value="comidas">Comidas</option>
+											<?php elseif($viewmodel['Tipo'] == "visitas") : ?>
+												<option value="<?php echo $viewmodel['Tipo']; ?>" ><?php echo $viewmodel['Tipo']; ?></option>
+												<option value="catas">Catas</option>
+												<option value="comidas">Comidas</option>
+											<?php else : ?>
+												<option value="<?php echo $viewmodel['Tipo']; ?>" ><?php echo $viewmodel['Tipo']; ?></option>
+												<option value="catas">Catas</option>
+												<option value="visitas">Visitas</option>
+											<?php endif; ?>
 										</select>
 										<div class="help-block with-errors"></div>
 									</div> 
@@ -52,9 +61,16 @@
 
 							<div class="col-md-12">
 								<div class="form-group">
-									<input type="text" class="form-control" id="precio" name="precio" placeholder="Introduce el precio ..." value="<?php echo $viewmodel['Precio'] ?>" ?>">
+									<input type="text" class="form-control" id="precio" name="precio" placeholder="Introduce el precio ..." value="<?php echo $viewmodel['Precio']; ?>">
 									<div class="help-block with-errors"></div>
 								</div>                                 
+							</div>
+
+							<div class="col-md-12">
+								<div class="gallery-single fix">
+									<img src="<?php echo '../../assets/images/'.$viewmodel['Foto']; ?>" class="img-fluid" alt="Image">
+									<div class="help-block with-errors"></div>
+								</div>
 							</div>
 
 							<div class="col-md-12">

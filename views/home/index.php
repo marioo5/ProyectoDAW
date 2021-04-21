@@ -2,7 +2,7 @@
 <div id="slides" class="cover-slides">
 		<ul class="slides-container">
 			<li class="text-center">
-				<img src="../../assets/images/slider-01.jpg" alt="">
+				<img src="<?php echo ROOT_PATH; ?>assets/images/slider-01.jpg" alt="">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
@@ -15,7 +15,7 @@
 				</div>
 			</li>
 			<li class="text-center">
-				<img src="../../assets/images/slider-02.jpg" alt="">
+				<img src="<?php echo ROOT_PATH; ?>assets/images/slider-02.jpg" alt="">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
@@ -28,7 +28,7 @@
 				</div>
 			</li>
 			<li class="text-center">
-				<img src="../../assets/images/slider-03.jpg" alt="">
+				<img src="<?php echo ROOT_PATH; ?>assets/images/slider-03.jpg" alt="">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
@@ -53,7 +53,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-md-6 col-sm-12">
-					<img src="../../assets/images/historia.jpg" alt="" class="img-fluid">
+					<img src="<?php echo ROOT_PATH; ?>assets/images/historia.jpg" alt="" class="img-fluid">
 				</div>
 				<div class="col-lg-6 col-md-6 col-sm-12 text-center">
 					<div class="inner-column">
@@ -98,33 +98,33 @@
 			<div class="tz-gallery">
 				<div class="row">
 					<div class="col-sm-12 col-md-4 col-lg-4">
-						<a class="lightbox" href="../../assets/images/gallery-img-01.jpg">
-							<img class="img-fluid" src="../../assets/images/gallery-img-01.jpg" alt="Gallery Images">
+						<a class="lightbox" href="<?php echo ROOT_PATH; ?>assets/images/gallery-img-01.jpg">
+							<img class="img-fluid" src="<?php echo ROOT_PATH; ?>assets/images/gallery-img-01.jpg" alt="Gallery Images">
 						</a>
 					</div>
 					<div class="col-sm-6 col-md-4 col-lg-4">
-						<a class="lightbox" href="../../assets/images/gallery-img-02.jpg">
-							<img class="img-fluid" src="../../assets/images/gallery-img-02.jpg" alt="Gallery Images">
+						<a class="lightbox" href="<?php echo ROOT_PATH; ?>assets/images/gallery-img-02.jpg">
+							<img class="img-fluid" src="<?php echo ROOT_PATH; ?>assets/images/gallery-img-02.jpg" alt="Gallery Images">
 						</a>
 					</div>
 					<div class="col-sm-6 col-md-4 col-lg-4">
-						<a class="lightbox" href="../../assets/images/gallery-img-03.jpg">
-							<img class="img-fluid" src="../../assets/images/gallery-img-03.jpg" alt="Gallery Images">
+						<a class="lightbox" href="<?php echo ROOT_PATH; ?>assets/images/gallery-img-03.jpg">
+							<img class="img-fluid" src="<?php echo ROOT_PATH; ?>assets/images/gallery-img-03.jpg" alt="Gallery Images">
 						</a>
 					</div>
 					<div class="col-sm-12 col-md-4 col-lg-4">
-						<a class="lightbox" href="../../assets/images/gallery-img-04.jpg">
-							<img class="img-fluid" src="../../assets/images/gallery-img-04.jpg" alt="Gallery Images">
+						<a class="lightbox" href="<?php echo ROOT_PATH; ?>assets/images/gallery-img-04.jpg">
+							<img class="img-fluid" src="<?php echo ROOT_PATH; ?>assets/images/gallery-img-04.jpg" alt="Gallery Images">
 						</a>
 					</div>
 					<div class="col-sm-6 col-md-4 col-lg-4">
-						<a class="lightbox" href="../../assets/images/gallery-img-05.jpg">
-							<img class="img-fluid" src="../../assets/images/gallery-img-05.jpg" alt="Gallery Images">
+						<a class="lightbox" href="<?php echo ROOT_PATH; ?>assets/images/gallery-img-05.jpg">
+							<img class="img-fluid" src="<?php echo ROOT_PATH; ?>assets/images/gallery-img-05.jpg" alt="Gallery Images">
 						</a>
 					</div> 
 					<div class="col-sm-6 col-md-4 col-lg-4">
-						<a class="lightbox" href="../../assets/images/gallery-img-06.jpg">
-							<img class="img-fluid" src="../../assets/images/gallery-img-06.jpg" alt="Gallery Images">
+						<a class="lightbox" href="<?php echo ROOT_PATH; ?>assets/images/gallery-img-06.jpg">
+							<img class="img-fluid" src="<?php echo ROOT_PATH; ?>assets/images/gallery-img-06.jpg" alt="Gallery Images">
 						</a>
 					</div>
 				</div>
@@ -150,7 +150,7 @@
 						<div class="carousel-inner mt-4">
 							<div class="carousel-item text-center active">
 								<div class="img-box p-1 border rounded-circle m-auto">
-									<img class="d-block w-100 rounded-circle" src="../../assets/images/profile-1.jpg" alt="">
+									<img class="d-block w-100 rounded-circle" src="<?php echo ROOT_PATH; ?>assets/images/profile-1.jpg" alt="">
 								</div>
 								<h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Pepe Garcia</strong></h5>
 								<h6 class="text-dark m-0">Enologo</h6>
@@ -158,7 +158,7 @@
 							</div>
 							<div class="carousel-item text-center">
 								<div class="img-box p-1 border rounded-circle m-auto">
-									<img class="d-block w-100 rounded-circle" src="../../assets/images/profile-3.jpg" alt="">
+									<img class="d-block w-100 rounded-circle" src="<?php echo ROOT_PATH; ?>assets/images/profile-3.jpg" alt="">
 								</div>
 								<h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Fernando Garrido</strong></h5>
 								<h6 class="text-dark m-0">Catador de vinos</h6>
@@ -166,7 +166,7 @@
 							</div>
 							<div class="carousel-item text-center">
 								<div class="img-box p-1 border rounded-circle m-auto">
-									<img class="d-block w-100 rounded-circle" src="../../assets/images/profile-7.jpg" alt="">
+									<img class="d-block w-100 rounded-circle" src="<?php echo ROOT_PATH; ?>assets/images/profile-7.jpg" alt="">
 								</div>
 								<h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Daniel Rodriguez</strong></h5>
 								<h6 class="text-dark m-0">Sumiller</h6>

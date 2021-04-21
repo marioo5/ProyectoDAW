@@ -17,7 +17,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-md-6">
-					<img src="../../assets/images/historia.jpg" alt="" class="img-fluid">
+					<img src="<?php echo ROOT_PATH; ?>assets/images/historia.jpg" alt="" class="img-fluid">
 				</div>
 				<div class="col-lg-6 col-md-6 text-center">
 					<div class="inner-column">

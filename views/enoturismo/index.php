@@ -46,7 +46,7 @@
 							<h5><?php echo $item['Precio']; ?></h5>
 							<?php if(isset($_SESSION['is_logged_in']) && $_SESSION['user_data']['rol']=='admin') : ?>
 							<input type="hidden" name="update_id" value="<?php echo $item['IdActividad']; ?>">
-							<a class="nav-link" href="<?php echo ROOT_PATH; ?>enoturismo/update">Modificar</a>
+							<a class="nav-link" href="<?php echo ROOT_PATH; ?>enoturismo/update/<?php echo $item['IdActividad']; ?>">Modificar</a>
 							<?php endif; ?>
 						</div>
 					</div>

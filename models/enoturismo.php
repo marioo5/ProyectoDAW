@@ -76,13 +76,15 @@ class EnoturismoModel extends Model{
 
 
     public function update(){
-          
+
+            $id = $_GET['id'];
+
             $post = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING); 
     
                 if(isset($post['submit'])){
-                    
+
                     $this->query('update actividad set titulo=:titulo,descripcion=:descripcion,foto=:foto,tipo=:tipo,precio=:precio where IdActividad=:id');
-                    $this->bind(':id', $post['IdActividad']);
+                    $this->bind(':id', $id);
                     $this->bind(':titulo', $post['titulo']);
                     $this->bind(':descripcion', $post['descripcion']);
                     $this->bind(':foto', $_FILES['foto']['name']);
@@ -92,13 +94,11 @@ class EnoturismoModel extends Model{
                         
                     header('Location: '.ROOT_URL.'enoturismo');
     
-                }else if(isset($_GET['update_id'])){
-
-                    $post = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING); 
+                }else{
 
                     $this->query('select * from actividad where IdActividad=:id');
-                    $this->bind(':id', $post['IdActividad']);
-                    $rows = $this->resultSet();
+                    $this->bind(':id', $_GET['id']);
+                    $rows = $this->single();
                     return $rows;     
                 
                 }

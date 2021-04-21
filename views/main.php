@@ -14,18 +14,18 @@
     <meta name="author" content="">
 
     <!-- Site Icons -->
-    <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="../assets/images/apple-touch-icon.png">
+    <link rel="shortcut icon" href="<?php echo ROOT_PATH; ?>assets/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="<?php echo ROOT_PATH; ?>assets/images/apple-touch-icon.png">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">    
+    <link rel="stylesheet" href="<?php echo ROOT_PATH; ?>assets/css/bootstrap.min.css">    
 	<!-- Site CSS -->
-    <link rel="stylesheet" href="../assets/css/style.css">   
-	<link rel="stylesheet" href="../assets/css/bootstrap-icons.css">  
+    <link rel="stylesheet" href="<?php echo ROOT_PATH; ?>assets/css/style.css">   
+	<link rel="stylesheet" href="<?php echo ROOT_PATH; ?>assets/css/bootstrap-icons.css">  
     <!-- Responsive CSS -->
-    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="<?php echo ROOT_PATH; ?>assets/css/responsive.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="<?php echo ROOT_PATH; ?>assets/css/custom.css">
 
 	<!-- CSS only -->
 	
@@ -42,7 +42,7 @@
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<div class="container">
 				<a class="navbar-brand" href="<?php echo ROOT_PATH; ?>">
-					<img src="../assets/images/logo.png" alt="" />
+					<img src="<?php echo ROOT_PATH; ?>assets/images/logo.png" alt="" />
 				</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-rs-food" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
 				  <span class="navbar-toggler-icon"></span>
@@ -184,17 +184,17 @@
 
 	<a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
 
-  	<script src="../assets/js/jquery-3.2.1.min.js"></script>
-	<script src="../assets/js/popper.min.js"></script>
-	<script src="../assets/js/bootstrap.min.js"></script>
+  	<script src="<?php echo ROOT_PATH; ?>assets/js/jquery-3.2.1.min.js"></script>
+	<script src="<?php echo ROOT_PATH; ?>assets/js/popper.min.js"></script>
+	<script src="<?php echo ROOT_PATH; ?>assets/js/bootstrap.min.js"></script>
     <!-- ALL PLUGINS -->
-	<script src="../assets/js/jquery.superslides.min.js"></script>
-	<script src="../assets/js/images-loded.min.js"></script>
-	<script src="../assets/js/isotope.min.js"></script>
-	<script src="../assets/js/baguetteBox.min.js"></script>
-	<script src="../assets/js/form-validator.min.js"></script>
-  	<script src="../assets/js/contact-form-script.js"></script>
-  	<script src="../assets/js/custom.js"></script>
+	<script src="<?php echo ROOT_PATH; ?>assets/js/jquery.superslides.min.js"></script>
+	<script src="<?php echo ROOT_PATH; ?>assets/js/images-loded.min.js"></script>
+	<script src="<?php echo ROOT_PATH; ?>assets/js/isotope.min.js"></script>
+	<script src="<?php echo ROOT_PATH; ?>assets/js/baguetteBox.min.js"></script>
+	<script src="<?php echo ROOT_PATH; ?>assets/js/form-validator.min.js"></script>
+  	<script src="<?php echo ROOT_PATH; ?>assets/js/contact-form-script.js"></script>
+  	<script src="<?php echo ROOT_PATH; ?>assets/js/custom.js"></script>
 
 </body>
 </html>
