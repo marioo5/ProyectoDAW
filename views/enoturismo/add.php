@@ -26,14 +26,14 @@
 						<div class="row">
 							<div class="col-md-12">
 								<div class="form-group">
-									<input type="text" class="form-control" id="titulo" name="titulo" placeholder="Introduce el titulo ..." required data-error="<?php echo $errorMSG; ?>">
+									<input type="text" class="form-control" id="titulo" name="titulo" placeholder="Introduce el titulo ..." required>
 									<div class="help-block with-errors"></div>
 								</div>                                 
 							</div>
 
               				<div class="col-md-12">
 								<div class="form-group">
-									<textarea class="form-control" id="textarea_com" name="descripcion" placeholder="Introduce una descripcion ..." required data-error="<?php echo $errorMSG; ?>" rows="4"></textarea>
+									<textarea class="form-control" id="textarea_com" name="descripcion" placeholder="Introduce una descripcion ..." required rows="4"></textarea>
 									<div class="help-block with-errors"></div>
 								</div>                                 
 							</div>
@@ -52,14 +52,14 @@
 
 							<div class="col-md-12">
 								<div class="form-group">
-									<input type="text" class="form-control" id="precio" name="precio" placeholder="Introduce el precio ..." required data-error="<?php echo $errorMSG; ?>">
+									<input type="text" class="form-control" id="precio" name="precio" required placeholder="Introduce el precio ..." >
 									<div class="help-block with-errors"></div>
 								</div>                                 
 							</div>
 
 							<div class="col-md-12">
 								<div class="form-group">
-									<input class="form-control" id="foto" name="foto" type="file" />
+									<input class="form-control" id="foto" name="foto" type="file" required/>
 									<div class="help-block with-errors"></div>
 								</div>
 							</div>

@@ -22,6 +22,12 @@
 					</div>
 				</div>
 			</div>
+			<?php 
+			if(isset($_SESSION['errorMsg'])){
+
+				echo '<div class="alert alert-danger">'.$_SESSION['errorMsg'].'</div>';
+				unset($_SESSION['errorMsg']);
+			}?>
 			<div class="row">
 				<div class="col-lg-12 col-sm-12 col-xs-12">
 					<div class="contact-block">
@@ -56,9 +62,9 @@
 										<div class="form-group">
 											<select class="custom-select d-block form-control" id="hora" name="hora" required data-error="Please select Person">
 											  <option disabled selected>Elige la hora*</option>
-											  <?php /* foreach($viewmodel as $item) : */?>
-											  <option value="<?php /* echo $item['Hora']; */?>"><?php /* echo $item['Hora'];*/ ?></option>
-											  <?php /* endforeach ;*/ ?>	
+											  <?php  foreach($viewmodel as $item) : ?>
+											  <option value="<?php echo $item['Hora']; ?>"><?php echo $item['Hora']; ?></option>
+											  <?php  endforeach ; ?>	
 											</select>
 											<div class="help-block with-errors"></div>
 										</div> 

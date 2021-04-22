@@ -11,7 +11,7 @@ class ContactModel extends Model{
 
             if($post['nombre'] == '' || $post['email'] == '' || $post['mensaje'] == ''){
 
-                Messages::setMsg('Please Fill In All Fields', 'error');
+                Messages::setMsg('Por favor rellena todos los campos', 'error');
                 return;
             }
 
@@ -22,8 +22,10 @@ class ContactModel extends Model{
             $this->execute();
 
             if($this->lastInsertId()){
-
-                header('Location: '.ROOT_URL.'contact');
+                
+                Messages::setMsg('Se ha enviado correctamente', 'succes');
+                /*header('Location: '.ROOT_URL.'contact');*/
+                
 
             }
         }

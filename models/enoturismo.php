@@ -18,7 +18,7 @@ class EnoturismoModel extends Model{
 
             if($post['titulo'] == '' || $post['descripcion'] == '' || $_FILES['foto']['name'] == '' || $post['tipo'] == '' || $post['precio'] == ''){
 
-                Messages::setMsg('Please Fill In All Fields', 'error');
+                Messages::setMsg('Por favor rellena todos los campos', 'error');
                 return;
             }
 

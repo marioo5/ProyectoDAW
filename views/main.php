@@ -84,7 +84,6 @@
 
 	<main class="container">
   		<div class="starter-template text-center py-5 px-3">
-    		<?php Messages::display(); ?>
     		<?php require ($view); ?>
   	</div>
 

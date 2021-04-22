@@ -12,20 +12,29 @@ class ReservaModel extends Model{
 
     public function add (){
 
-        $this->query('select * from actividad');
-        $rows = $this->resultSet();
-        
-        
         $post = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
+
+        $this->query('select a.*,h.Hora from actividad a join horasact h on a.IdActividad=h.IdActividad');
+        $rows = $this->resultSet();
+
+        $this->query('select * from reservas');
+        $reservas = $this->resultSet();
+        
+        if(isset($post)){
+        foreach ($reservas as $reserva){
+            
+            if($reserva['actividad'] == $post['actividad'] && $reserva['fecha'] == $post['fecha'] && $reserva['hora'] == $post['hora']){
+
+                Messages::setMsg('Esa actividad ya ha sido reservada en esa fecha y esa hora. Por favor recarga la pagina para hacer otra reserva', 'error');
+                return;
+            }
+
+        }
+
+    }
 
         if(isset($post['submit'])){
 
-
-            if($post['actividad'] == '' || $post['personas'] == '' || $post['fecha'] == '' || $post['hora'] == '' || $post['nombre'] == '' || $post['email'] == ''){
-
-                Messages::setMsg('Please Fill In All Fields', 'error');
-                return;
-            }
 
             $this->query('insert into reservas (actividad,numpersonas,fecha,hora,nomusuario,emailusu) values (:actividad,:personas,:fecha,:hora,:nombre,:email)');
             $this->bind(':actividad', $post['actividad']);

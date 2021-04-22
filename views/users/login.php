@@ -26,7 +26,7 @@
 						<div class="row">
 							<div class="col-md-12">
 								<div class="form-group">
-									<input type="text" class="form-control" id="email" name="email" placeholder="Introduce tu email ..." required data-error="<?php echo $errorMSG; ?>">
+									<input type="email" class="form-control" id="email" name="email" placeholder="Introduce tu email ..." required>
 									<div class="help-block with-errors"></div>
 								</div>                                 
 							</div>

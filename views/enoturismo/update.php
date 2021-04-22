@@ -75,7 +75,8 @@
 
 							<div class="col-md-12">
 								<div class="form-group">
-									<input class="form-control" id="foto" name="foto" type="file" />
+									<p>* Es obligatorio seleccionar una imagen</p>
+									<input class="form-control" id="foto" name="foto" type="file" required/>
 									<div class="help-block with-errors"></div>
 								</div>
 							</div>
