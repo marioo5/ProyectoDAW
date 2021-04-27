@@ -24,7 +24,7 @@
 			<div class="row">
 				<div class="col-md-4 col-sm-6">
 					<div class="our-team">
-						<img src="<?php echo ROOT_PATH; ?>assets/images/stuff-img-01.jpg">
+						<img src="<?php echo ROOT_PATH; ?>assets/images/vinedos_david-color-1024x682.jpg">
 						<div class="team-content">
 							<h3 class="title">David Ruiz</h3>
 							<span class="post">Agricultor</span>
@@ -39,7 +39,7 @@
 
 				<div class="col-md-4 col-sm-6">
 					<div class="our-team">
-						<img src="<?php echo ROOT_PATH; ?>assets/images/stuff-img-02.jpg">
+						<img src="<?php echo ROOT_PATH; ?>assets/images/ruiz_alfaya_home_bn.jpg">
 						<div class="team-content">
 							<h3 class="title">Ana Belén Fernández</h3>
 							<span class="post">Enólogo</span>
